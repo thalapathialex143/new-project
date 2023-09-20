@@ -1,1 +1,13 @@
-creates test1.ext file
+#random password generator 
+import random
+print("welcome to random password generator")
+randomechras = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1235667890@/*!:;&+"
+nbrofpwds = int(input("please enter the number of password to be generated:"))
+pwdlen = int(input("please enter the length of the password needed:"))
+print("Here are yours passwords:")
+for x in range(nbrofpwds):
+    pwd = ""
+    for chars in range(pwdlen): 
+        pwd = pwd + random.choice(randomechars)
+    print(pwd) 
+    
